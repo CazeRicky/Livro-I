@@ -1,10 +1,16 @@
 public class Personagem {
-    String nome1;
-    int energia1;
-    String nome2;
-    int energia2;
-    int vida;
-    int forca;
-    int coragem1;
-    int coragem2;
+    String nome;
+    int coragem;
+
+    public Personagem (String nome, int coragem){
+        this.nome = nome;
+        this.coragem = coragem;
+    }
+
+    void atualizarCoragem(int incremento){
+        if(incremento != 0){
+            this.coragem += incremento;
+            System.out.println("Mediante a isso a coragem de " + nome + " foi atualizada para " + coragem);
+        }
+    }
 }
